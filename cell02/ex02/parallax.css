@@ -1,0 +1,79 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.parallax {
+    height: 100vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.parallax1 {
+    background-image: url(https://i.redd.it/ya8qikz9kn0f1.png);
+}
+
+.parallax2 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoyruqttllkee_PXTThoWX3bmuejCT71I62Q&s);
+}
+
+.parallax::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.text {
+    position: relative;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 3px;
+    padding: 20px 40px;
+
+    border: 2px solid white;
+    backdrop-filter: blur(5px);
+
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1.5s ease forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content {
+    height: 300px;
+    background: black;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    letter-spacing: 2px;
+
+    transition: all 0.5s ease;
+}
+
+.content:hover {
+    background: #111;
+    transform: scale(1.02);
+}
