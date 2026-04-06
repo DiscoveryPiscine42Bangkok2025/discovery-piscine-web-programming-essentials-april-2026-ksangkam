@@ -1,0 +1,23 @@
+table {
+    border-collapse: collapse;
+    width: 100vw;
+  }
+  td {
+    border: 2px solid #333;
+    padding: 0;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: bold;
+    height: 100vh;
+    vertical-align: middle;
+  }
+  
+  .box-red {
+    background-color: #ff9d9dfa; 
+    color: #8b1313; 
+  }
+
+    .box-blue {
+    background-color: #add8e6;
+    color: #00008b;
+  }
